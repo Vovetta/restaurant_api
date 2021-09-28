@@ -8,6 +8,9 @@ class RestaurantModel(Model):
     id = IntField(pk=True)
     name = CharField(max_length=250, unique=True)
 
+    class Meta:
+        table = 'restaurant'
+
 
 RestaurantIn = pydantic_model_creator(RestaurantModel, name='RestaurantIn', exclude_readonly=True)
 RestaurantOut = pydantic_model_creator(RestaurantModel, name='RestaurantOut')

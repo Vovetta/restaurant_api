@@ -9,12 +9,14 @@ CONFIG_FILE = 'config.yaml'
 
 
 class Service:
+    """Service configuration"""
     host: str
     port: int
     debug: bool
 
 
 class Sqlite:
+    """Sqlite database configuration"""
     database: str
 
 
