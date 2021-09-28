@@ -1,6 +1,7 @@
 Service:
   host: <service-host-ip>
   port: <service-host-port>
+  debug: <debug-mode-flag>
 
 Sqlite:
   database: <database-file>

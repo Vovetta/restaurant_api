@@ -9,4 +9,5 @@ class RestaurantModel(Model):
     name = CharField(max_length=250, unique=True)
 
 
-Restaurant = pydantic_model_creator(RestaurantModel, name='Restaurant')
+RestaurantIn = pydantic_model_creator(RestaurantModel, name='RestaurantIn', exclude_readonly=True)
+RestaurantOut = pydantic_model_creator(RestaurantModel, name='RestaurantOut')

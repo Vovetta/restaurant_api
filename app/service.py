@@ -2,9 +2,9 @@ from fastapi import FastAPI
 from tortoise.contrib.fastapi import register_tortoise
 
 from api import routers
-from config import Sqlite
+from config import Sqlite, Service
 
-service = FastAPI()
+service = FastAPI(debug=Service.debug)
 
 for router in routers:
     service.include_router(router)

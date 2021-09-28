@@ -11,6 +11,7 @@ CONFIG_FILE = 'config.yaml'
 class Service:
     host: str
     port: int
+    debug: bool
 
 
 class Sqlite:
