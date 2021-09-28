@@ -137,6 +137,12 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
+
+## CUSTOM SECTION ##
 # IDE's files
 .idea/
 .vscode/
+
+# Data
+config.yaml
+sqlite.db*

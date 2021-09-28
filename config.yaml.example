@@ -1,0 +1,6 @@
+Service:
+  host: <service-host-ip>
+  port: <service-host-port>
+
+Sqlite:
+  database: <database-file>

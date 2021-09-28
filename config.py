@@ -1,5 +1,6 @@
 from inspect import getmembers, isclass
 from sys import modules
+
 from yaml import safe_load, YAMLError
 
 from app.exceptions import ServiceException
@@ -8,8 +9,12 @@ CONFIG_FILE = 'config.yaml'
 
 
 class Service:
-    host: str = ...
-    port: int = ...
+    host: str
+    port: int
+
+
+class Sqlite:
+    database: str
 
 
 def load_config() -> None:
